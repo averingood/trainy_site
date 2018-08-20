@@ -60,17 +60,16 @@ header {
 
 .content {
   margin: 180px 0 45px 0;
-  display: flex;
+  /* display: flex; */
   padding-right: 15px;
 }
 
 .wrapper {
-  width: 100%;
-  height: 100%;
+  float: left
 }
 
 .wrapper-flex {
-  display: flex
+  float: left
 }
 
 .blue-div {
@@ -78,6 +77,8 @@ header {
   margin: 15px;
   max-width: 280px;
   width: 100%;
+  height: 600px;
+  float: left;
 }
 
 .first-green-div {
@@ -92,6 +93,7 @@ header {
   margin-top: 15px;
   width: 180px;
   height: 190px;
+  float: left;
 }
 
 .yellow-div {
@@ -114,6 +116,8 @@ header {
   width: 100%;
   height: 190px;
   border-radius: 15px;
+  clear: left;
+  display: block;
 }
 
 .picture-div {

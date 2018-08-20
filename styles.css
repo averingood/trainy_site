@@ -35,8 +35,27 @@ header {
   background-color: #F4F4F4;
 }
 
-.header-menu input {
-  margin: 15px 0 15px 15px;
+.menu-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.header-menu li {
+  display: block;
+  margin: 15px;
+}
+
+.header-menu li a {
+  padding: 8px;
+  background-color: #FCFCFB;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.header-menu li a::after {
+  color: white;
+  background-color: #8D569A;
 }
 
 .content {

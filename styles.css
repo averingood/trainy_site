@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #8D569A;
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+
+.pink-text {
+  color: #F4A2C8
+}
+
+header {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.header-title h1 {
+  margin: 15px
+}
+
+.header-date {
+  background-color: #8D569A;
+  color: white;
+  text-align: right;
+  padding: 15px 0;
+}
+
+.header-date h3 {
+  margin: 0 15px;
+}
+
+.header-menu {
+  background-color: #F4F4F4;
+}
+
+.header-menu input {
+  margin: 15px 0 15px 15px;
+}
+
+.content {
+  margin-top: 170px;
+}

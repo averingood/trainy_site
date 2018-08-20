@@ -16,8 +16,13 @@ header {
   width: 100%;
 }
 
+.header-title {
+  padding-left: 15px
+}
+
 .header-title h1 {
-  margin: 15px
+  display: inline-block;
+  margin-right: -4px
 }
 
 .header-date {

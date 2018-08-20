@@ -1,3 +1,7 @@
+html, body {
+  height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -59,7 +63,7 @@ header {
 }
 
 .content {
-  margin-top: 180px;
+  margin: 180px 0 45px 0;
   display: flex;
   padding-right: 15px;
 }
@@ -127,5 +131,14 @@ header {
   margin: 15px 0 15px 0;
   border: 4px solid;
   max-width: 120px;
+  width: 100%;
+}
+
+footer {
+  position: fixed;
+  left: 0; bottom: 0;
+  padding: 20px;
+  background: #8D569A;
+  color: #fff;
   width: 100%;
 }

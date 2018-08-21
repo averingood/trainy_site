@@ -1,5 +1,5 @@
 
-function displayDate(id){
+function displayDate(id) {
 
   var $elem = document.getElementById(id);
 
@@ -35,7 +35,7 @@ function displayDate(id){
   $elem.innerHTML = date;
 }
 
-function toggleOkImg() {
+function toggleImg() {
   var $img = document.getElementById('ok-img'),
       style = getComputedStyle($img),
       visibility = style.getPropertyValue('visibility');
@@ -48,5 +48,12 @@ function toggleOkImg() {
     $img.setAttribute('style', 'visibility:hidden');
   }
 };
+
+function showColor(event) {
+  var style = getComputedStyle(event.target),
+      color = style.getPropertyValue('background-color')
+
+  console.log(color);
+}
 
 displayDate('header-date');

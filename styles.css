@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,7 +10,7 @@ body {
 }
 
 .pink-text {
-  color: #F4A2C8
+  color: #F4A2C8;
 }
 
 header {
@@ -17,12 +21,12 @@ header {
 }
 
 .header-title {
-  padding-left: 15px
+  padding-left: 15px;
 }
 
 .header-title h1 {
   display: inline-block;
-  margin-right: -4px
+  margin-right: -4px;
 }
 
 .header-date {
@@ -83,6 +87,10 @@ header {
   width: 33%;
 }
 
+.first-block-left .blue-div:first-child {
+  background: red;
+}
+
 .first-block-right {
   float: left;
   width: 66%
@@ -114,7 +122,7 @@ header {
 }
 
 .wrapper-flex {
-  float: left
+  float: left;
 }
 
 .blue-div {
@@ -127,7 +135,7 @@ header {
   background-color: green;
   margin-top: 15px;
   width: 100%;
-  height: 190px
+  height: 190px;
 }
 
 .yellow-div {
@@ -139,7 +147,7 @@ header {
 .grey-div {
   background-color: grey;
   margin: 15px;
-  height: 190px
+  height: 190px;
 }
 
 .purple-div {
@@ -165,27 +173,37 @@ header {
 /* Form on second page */
 
 .form {
-  max-width: 400px;
+  width: 50%;
   margin: 25px;
-  font-weight: bold
+  font-weight: bold;
 }
 
 .field {
   margin-top: 15px;
 }
 
-.field-date-right, .field-date-left {
-  display: inline-block;
+.field-date {
+  float: left;
+  width: 50%;
+  padding: 0 5px;
 }
 
-.field-date-right {
-  margin-right: 31px
+.field-quantity :first-child {
+  padding-left: 0;
+}
+
+.field-quantity :last-child {
+  padding-right: 0;
+}
+
+.overflow {
+  overflow: auto;
 }
 
 .field-select {
   text-align-last: center;
   display: block;
-  width: 103%;
+  width: 100%;
   height: 40px;
   border-radius: 5px;
   border: 2px solid #cccccc;
@@ -197,7 +215,7 @@ header {
 .field-input {
   display: block;
   width: 100%;
-  height: 30px;
+  height: 40px;
   padding-left: 10px;
   border-radius: 5px;
   border: 2px solid #cccccc;

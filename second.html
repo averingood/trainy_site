@@ -49,11 +49,11 @@
         <div class="field overflow field-quantity">
           <div class="field-date">
             <label for="from-date">From date</label>
-            <input type="date" id="from-date" class="field-input" value="22/07/2018">
+            <input type="date" id="from-date" class="field-input" value="2018-07-22">
           </div>
           <div class="field-date">
             <label for="to-date">To date</label>
-            <input type="date" id="to-date" class="field-input" value="22/07/2018">
+            <input type="date" id="to-date" class="field-input" value="2018-07-22">
           </div>
         </div>
         <div class="field">
@@ -61,10 +61,12 @@
           <input type="text" id="search" class="field-input">
         </div>
         <div class="field form-buttons">
-          <input type="button" value="Reset">
+          <input type="button" value="Reset" onclick="toggleOkImg()">
           <input type="submit" value="OK">
         </div>
       </form>
+
+      <img src="ok.jpg" alt="ok" class="ok-img" id="ok-img">
 
     </div>
   </main>

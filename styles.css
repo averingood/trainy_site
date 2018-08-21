@@ -77,7 +77,7 @@ header {
 /* Content of pages */
 
 .content {
-  margin: 200px 0 45px 0;
+  margin: 180px 0 45px 0;
 }
 
 /* Color blocks on first page */
@@ -85,10 +85,6 @@ header {
 .first-block-left {
   float: left;
   width: 33%;
-}
-
-.first-block-left .blue-div:first-child {
-  background: red;
 }
 
 .first-block-right {
@@ -159,7 +155,7 @@ header {
   clear: left;
 }
 
-.content img {
+.content .first-block-left img {
   max-height: 190px;
   width: 100%;
 }
@@ -173,8 +169,9 @@ header {
 /* Form on second page */
 
 .form {
+  float: left;
   width: 50%;
-  margin: 25px;
+  margin-left: 25px;
   font-weight: bold;
 }
 
@@ -237,6 +234,11 @@ header {
   color: white;
   background-color: #8D569A;
   border: 1px solid #8D569A;
+}
+
+.ok-img {
+  width: 40%;
+  visibility: hidden;
 }
 
 /* Footer */

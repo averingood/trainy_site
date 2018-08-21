@@ -29,14 +29,14 @@ header {
   margin-right: -4px;
 }
 
-.header-date {
+.header-date-block {
   background-color: #8D569A;
   color: white;
   text-align: right;
   padding: 15px 0;
 }
 
-.header-date h3 {
+.header-date-block h3 {
   margin: 0 15px;
 }
 

@@ -1,7 +1,7 @@
 
-function displayDate(id, addSeconds) {
+function displayTime(idElem, addSeconds) {
 
-  var $elem = document.getElementById(id);
+  var $elem = document.getElementById(idElem);
 
   var milliseconds = new Date().getTime();
 
@@ -11,65 +11,45 @@ function displayDate(id, addSeconds) {
     currentDate = new Date(milliseconds);
   }
 
-  var day = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday"
-  ];
+  var time = currentDate.toLocaleTimeString();
 
-  var mounth = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"
-  ];
-
-  var date = day[currentDate.getDay()] + ", " +
-              currentDate.getDate() + " " +
-              mounth[currentDate.getMonth()] + ", " +
-              currentDate.getFullYear() + ", " +
-              currentDate.toLocaleTimeString();
-
-  $elem.innerHTML = date;
-}
-
-function toggleImg() {
-  var $img = document.getElementById('ok-img'),
-      style = getComputedStyle($img),
-      visibility = style.getPropertyValue('visibility');
-
-  if (visibility == 'hidden'){
-    $img.setAttribute('style', 'visibility:visible');
-  } 
-  
-  if (visibility == 'visible'){
-    $img.setAttribute('style', 'visibility:hidden');
-  }
+  $elem.innerHTML = time;
 };
 
-function showColor(event) {
-  var style = getComputedStyle(event.target),
-      color = style.getPropertyValue('background-color')
+// function toggleImg() {
+//   var $img = document.getElementById('ok-img'),
+//       style = getComputedStyle($img),
+//       visibility = style.getPropertyValue('visibility');
 
-  console.log(color);
-}
+//   if (visibility == 'hidden'){
+//     $img.setAttribute('style', 'visibility:visible');
+//   } 
+  
+//   if (visibility == 'visible'){
+//     $img.setAttribute('style', 'visibility:hidden');
+//   }
+// };
 
-setInterval(function(){
-  displayDate('current-date')
-}, 1000);
+// function showColor(event) {
+//   var style = getComputedStyle(event.target),
+//       color = style.getPropertyValue('background-color');
 
-setInterval(function(){
-  displayDate('future-date', 1)
-}, 1000);
+//   console.log(color);
+// };
+
+function showTime(idElem, options) {
+
+  setInterval(function() {
+    displayTime(idElem, options.futureSeconds);
+  }, options.delay);
+
+};
+
+showTime('current-time', {
+  delay: 1000
+});
+
+showTime('future-time', {
+  delay: 5000,
+  futureSeconds: 5
+});

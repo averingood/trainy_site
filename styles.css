@@ -36,8 +36,14 @@ header {
   padding: 15px 0;
 }
 
-.header-date-block h3 {
-  margin: 0 15px;
+.header-date-block .future-date {
+  margin: 0 0 0 15px;
+  float: left;
+}
+
+.header-date-block .current-date {
+  margin: 0 15px 0 0;
+  float: right;
 }
 
 /* Menu */
@@ -155,7 +161,7 @@ header {
   clear: left;
 }
 
-.content .first-block-left img {
+.content .first-block-right img {
   max-height: 190px;
   width: 100%;
 }

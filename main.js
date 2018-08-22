@@ -1,9 +1,15 @@
 
-function displayDate(id) {
+function displayDate(id, addSeconds) {
 
   var $elem = document.getElementById(id);
 
-  var currentDate = new Date();
+  var milliseconds = new Date().getTime();
+
+  if (addSeconds) {
+    var currentDate = new Date(milliseconds + addSeconds*1000);
+  } else {
+    currentDate = new Date(milliseconds);
+  }
 
   var day = [
     "Sunday",
@@ -30,7 +36,11 @@ function displayDate(id) {
     "December"
   ];
 
-  var date = day[currentDate.getDay()] + ", " + currentDate.getDate() + " " + mounth[currentDate.getMonth()] + ", " + currentDate.getFullYear();
+  var date = day[currentDate.getDay()] + ", " +
+              currentDate.getDate() + " " +
+              mounth[currentDate.getMonth()] + ", " +
+              currentDate.getFullYear() + ", " +
+              currentDate.toLocaleTimeString();
 
   $elem.innerHTML = date;
 }
@@ -56,4 +66,10 @@ function showColor(event) {
   console.log(color);
 }
 
-displayDate('header-date');
+setInterval(function(){
+  displayDate('current-date')
+}, 1000);
+
+setInterval(function(){
+  displayDate('future-date', 1)
+}, 1000);

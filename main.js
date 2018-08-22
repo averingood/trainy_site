@@ -16,26 +16,26 @@ function displayTime(idElem, addSeconds) {
   $elem.innerHTML = time;
 };
 
-// function toggleImg() {
-//   var $img = document.getElementById('ok-img'),
-//       style = getComputedStyle($img),
-//       visibility = style.getPropertyValue('visibility');
+function toggleImg() {
+  var $img = document.getElementById('ok-img'),
+      style = getComputedStyle($img),
+      visibility = style.getPropertyValue('visibility');
 
-//   if (visibility == 'hidden'){
-//     $img.setAttribute('style', 'visibility:visible');
-//   } 
+  if (visibility == 'hidden'){
+    $img.setAttribute('style', 'visibility:visible');
+  };
   
-//   if (visibility == 'visible'){
-//     $img.setAttribute('style', 'visibility:hidden');
-//   }
-// };
+  if (visibility == 'visible'){
+    $img.setAttribute('style', 'visibility:hidden');
+  };
+};
 
-// function showColor(event) {
-//   var style = getComputedStyle(event.target),
-//       color = style.getPropertyValue('background-color');
+function showColor(event) {
+  var style = getComputedStyle(event.target),
+      color = style.getPropertyValue('background-color');
 
-//   console.log(color);
-// };
+  console.log(color);
+};
 
 function showTime(idElem, options) {
 

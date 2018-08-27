@@ -19,6 +19,11 @@
     <div class="header-date-block overflow">
       <h4 class="future-time">Future time: </h4>
       <h4 class="future-time" id="future-time"></h4>
+      <input class="future-time" type="button" value="Stop time" onclick="stopFutureTime()">
+      <h4 class="future-time">Random time: </h4>
+      <h4 class="future-time" id="random-time">00:00:00</h4>
+      <input class="future-time" type="button" value="Get random" onclick="getRandomTime()">
+      <input class="current-time" type="button" value="Stop time" onclick="stopCurrentTime()">
       <h4 class="current-time" id="current-time"></h4>
       <h4 class="current-time">Current time: </h4>
     </div>
@@ -64,8 +69,8 @@
           <input type="text" id="search" class="field-input">
         </div>
         <div class="field form-buttons">
-          <input type="button" value="Reset" onclick="toggleImg()">
-          <input type="submit" value="OK">
+          <input class="pink-button" type="button" value="Reset" onclick="toggleImg()">
+          <input class="pink-button" type="submit" value="OK">
         </div>
       </form>
 

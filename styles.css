@@ -226,7 +226,7 @@ header {
   font-weight: bold;
 }
 
-.form-buttons input {
+.pink-button {
   color: #ffffff;
   border-radius: 5px;
   background-color: #F4A2C8;
@@ -236,7 +236,7 @@ header {
   font-weight: bold;
 }
 
-.form-buttons input:hover {
+.pink-button:hover {
   color: white;
   background-color: #8D569A;
   border: 1px solid #8D569A;

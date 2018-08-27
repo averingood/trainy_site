@@ -16,59 +16,79 @@
       <h1>Services</h1>
     </div>
 
-    <div class="header-date">
-      <h3>Wednesday, July 25, 2018</h3>
-    </div>
+    <div class="header-date-block overflow">
+        <h4 class="future-time">Future time: </h4>
+        <h4 class="future-time" id="future-time"></h4>
+        <input class="future-time" type="button" value="Stop time" onclick="stopFutureTime()">
+        <input class="current-time" type="button" value="Stop time" onclick="stopCurrentTime()">
+        <h4 class="current-time" id="current-time"></h4>
+        <h4 class="current-time">Current time: </h4>
+        <h4 class="future-time">Random future: </h4>
+        <h4 class="future-time" id="random-future-time"></h4>
+      </div>
 
     <nav class="header-menu">
       <ul class="menu-list">
-        <li><a href="#" id="first-page">First page</a></li>
-        <li><a href="#" id="second-page">Second page</a></li>
+        <li><a href="first.html" id="first-page">First page</a></li>
+        <li><a href="second.html" id="second-page">Second page</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <div class="content">
+    <div class="content overflow" onclick="showColor(event)">
 
       <div class="first-block-left">
-        <div class="blue-div"></div>
+        <div class="blue-div color"></div>
       </div>
 
       <div class="first-block-right">
+        
         <div class="second-block-top">
-            <div class="third-block-left">
-              <div class="fourth-block-top">
-                <div class="green-div"></div>
+          
+          <div class="third-block-left">
+            
+            <div class="fourth-block-top">
+              <div class="green-div color"></div>
+            </div>
+
+            <div class="fourth-block-bottom">
+              <div class="fifth-block-left">
+                <div class="green-div color"></div>
               </div>
-              <div class="fourth-block-bottom">
-                <div class="fifth-block-left">
-                  <div class="green-div"></div>
-                </div>
-                <div class="fifth-block-right">
-                  <div class="yellow-div"></div>
-                </div>
+
+              <div class="fifth-block-right">
+                <div class="yellow-div color"></div>
               </div>
             </div>
-            <div class="third-block-center">
-                <div class="sixth-block-top">
-                  <div class="grey-div"></div>
-                </div>
-                <div class="sixth-block-bottom">
-                  <img src="image.jpg" alt="image">
-                </div>
+
+          </div>
+
+          <div class="third-block-center">
+            <div class="sixth-block-top">
+              <div class="grey-div color"></div>
             </div>
-            <div class="third-block-right">
-              <div class="border-div"></div>
+
+            <div class="sixth-block-bottom">
+              <img src="image.jpg" alt="image">
             </div>
+          </div>
+
+          <div class="third-block-right">
+            <div class="border-div"></div>
+          </div>
+
         </div>
         <div class="second-block-bottom">
-            <div class="purple-div"></div>
+            <div class="purple-div color"></div>
         </div>
       </div>
+
+    </div>
   </main>
   
   <footer>
   </footer>
+  <script type="text/javascript" src="main.js"></script>
 </body>
 </html>

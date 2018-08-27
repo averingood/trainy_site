@@ -17,7 +17,7 @@ function showTime(idElem, seconds) {
   $elem.innerHTML = stringTime;
 };
 
-// Main constructor
+// Main constructor of time
 
 function Time() {
   var vm = this;
